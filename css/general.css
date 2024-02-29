@@ -38,6 +38,7 @@ Gray: #555
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -45,6 +46,7 @@ body {
     color: #555;
     line-height: 1;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 /* ************************** */
