@@ -6,15 +6,15 @@ Instade 1rem = 1em = 16px */
 /* Bellow 1344px (Smaller desktop) */
 /* ************************** */
 
-@media (max-width: 84em) { 
+@media (max-width: 84em) {
 
-    .hero{
+    .hero {
         max-width: 120rem;
     }
 
-    .heading-primary{
+    .heading-primary {
         font-size: 4.4rem;
-    } 
+    }
 
     .gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -27,32 +27,32 @@ Instade 1rem = 1em = 16px */
 
 @media (max-width:75em) {
 
-    html{
+    html {
         font-size: 56.25%;
     }
 
-    .grid{
+    .grid {
         column-gap: 4.8rem;
         row-gap: 6.4rem;
     }
 
-    .heading-secondary{
+    .heading-secondary {
         font-size: 3.6rem;
     }
-    
-    .heading-tertiary{
+
+    .heading-tertiary {
         font-size: 2.4rem;
     }
 
-    .header{
+    .header {
         padding: 0 3.2rem;
     }
 
-    .main-nav-list{
+    .main-nav-list {
         gap: 3.2rem;
     }
 
-    .hero{
+    .hero {
         gap: 4.8rem;
     }
 
@@ -65,14 +65,14 @@ Instade 1rem = 1em = 16px */
 /* Bellow 944px (Taplete) */
 /* ************************** */
 @media (max-width: 59em) {
-    html{
+    html {
         font-size: 50%;
     }
-    
-    .hero{
-     grid-template-columns: 1fr;
-     padding: 0 8rem;
-     gap: 6.4rem;
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
     }
 
     .hero-img {
@@ -80,53 +80,53 @@ Instade 1rem = 1em = 16px */
     }
 
     .hero-text-box,
-    .hero-img-box{
+    .hero-img-box {
         text-align: center;
     }
 
-    .delivered-meals{
+    .delivered-meals {
         justify-content: center;
         margin-top: 3.2rem;
     }
 
-    .logos img{
+    .logos img {
         height: 2.4rem;
     }
 
-    .step-number{
+    .step-number {
         font-size: 7.4rem;
     }
 
     .meal-content {
-     padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
     }
 
-    .section-testimonials{
-        grid-template-columns: 1fr; 
+    .section-testimonials {
+        grid-template-columns: 1fr;
     }
 
     .gallery {
         grid-template-columns: repeat(6, 1fr);
     }
 
-    .cta{   
-        grid-template-columns: 3fr 2fr; 
+    .cta {
+        grid-template-columns: 3fr 2fr;
     }
 
-    .cta-form{
+    .cta-form {
         grid-template-columns: 1fr;
     }
 
-    .btn--form{
+    .btn--form {
         margin-top: 1.2rem;
     }
 
     /* Mobile Navigation */
-    .btn-mobile-nav{
+    .btn-mobile-nav {
         display: block;
     }
 
-    .main-nav{
+    .main-nav {
         background-color: rgba(255, 255, 255, 0.95);
         position: absolute;
         top: 0;
@@ -156,27 +156,28 @@ Instade 1rem = 1em = 16px */
         visibility: hidden;
     }
 
-    .nav-open .main-nav{
+    .nav-open .main-nav {
         opacity: 1;
         pointer-events: auto;
         visibility: visible;
         transform: translateX(0);
     }
 
-    .nav-open .icon-mobile-nav[name=close-outline]{
+    .nav-open .icon-mobile-nav[name=close-outline] {
         display: block;
     }
-    .nav-open .icon-mobile-nav[name=menu-outline]{
+
+    .nav-open .icon-mobile-nav[name=menu-outline] {
         display: none;
     }
 
-    .main-nav-list{
+    .main-nav-list {
         flex-direction: column;
         gap: 4.8rem;
     }
 
     .main-nav-link:link,
-    .main-nav-link:visited{
+    .main-nav-link:visited {
         font-size: 3rem;
     }
 }
@@ -186,36 +187,107 @@ Instade 1rem = 1em = 16px */
 /* ************************** */
 @media (max-width: 44em) {
 
-    .heading-secondary{
+    .heading-secondary {
         margin-bottom: 4.8rem;
     }
 
-    .grid--3-cols, 
-    .grid--4-cols{
-        grid-template-columns: repeat(2, 1fr); 
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .diet{
+    .diet {
         grid-column: 1 / -1;
         justify-self: center;
     }
 
-    .pricing-plan{
+    .pricing-plan {
         width: 100%;
     }
 
-    .grid--footer{
-        grid-template-columns: repeat(6 , 1fr);
+    .grid--footer {
+        grid-template-columns: repeat(6, 1fr);
     }
 
     .logo-col,
-    .address-col{
+    .address-col {
         grid-column: span 3;
     }
 
-    .nav-col{
+    .nav-col {
         grid-row: 1;
         grid-column: span 2;
         margin-bottom: 3.2rem;
+    }
+}
+
+/* ************************** */
+/* Bellow 544px (Phone) */
+/* ************************** */
+@media (max-width: 34em) {
+
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .grid {
+        gap: 2.8rem;
+    }
+
+    .section-hero {
+        padding: 2.4rem 0 6.4rem 0;
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited {
+        padding: 2.4rem 1.6rem;
+    }
+
+    .hero {
+        padding: 0 3.2rem;
+    }
+
+    .hero-img {
+        width: 80%;
+    }
+
+    .logos img{
+        height: 1.2rem;
+    }
+
+    .step-img-box:nth-child(2){
+       grid-row: 1;
+    }
+
+    .step-img-box:nth-child(6){
+        grid-row: 5;
+    }
+
+    .step-img-box{
+        transform: translateY(2.4rem);
+    }
+
+    .testimonials{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(4 , 1fr);
+    }
+
+    .cta{
+        grid-template-columns: 1fr;
+    }
+
+    .cta-text-box{
+        padding: 3.2rem;
+    }
+
+    .cta-img-box{
+        height: 38rem;
+        grid-row: 1;
     }
 }
